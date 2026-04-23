@@ -73,7 +73,7 @@ Aligns with business/finance context required by ACC102
 ## 7.Product & Demo
 - **GitHub Repository**: [Your GitHub Link]
 - **Demo Video**: [Your Demo Video Link]
-- **Notebook**: `MSFT_ADBE_Investment_Analysis.ipynb`
+- **Notebook**: `ACC102 .ipynb`
 ***
 ## 8.Limitations & Improvements
 - Limitations: Reliance on historical data; no macroeconomic variables included.
