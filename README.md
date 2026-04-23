@@ -1,15 +1,15 @@
-# MSFT vs NVDA Stock Investment Analysis – ACC102 Data Product
+#  Microsoft (MSFT) vs Adobe (ADBE) Investment Analysis
 
 ## 1. Product Information
 
 - Module Code: ACC102
-- Student Name: [Your Name]
-- Student ID: [Your ID]
+- Student Name: [Jianing.Wu]
+- Student ID: [2473360]
 - Track: Track 2 – GitHub Data Analysis Project
-- Product Title: **Risk-Return Analysis of Microsoft (MSFT) and NVIDIA (NVDA) Stocks for Investment Decision Support**
+- Product Title: **Risk-Return Analysis of Microsoft (MSFT) and Adobe (ADBE) Stocks for Investment Decision Support**
 ***
 ## 2. Analytical Purpose & Target Audience
-This data product compares the risk and return performance of Microsoft (MSFT) and NVIDIA (NVDA). It helps users evaluate which stock better fits their investment preferences by computing key financial indicators and visualizing results.
+This data product compares the risk and return performance of Microsoft (MSFT) and Adobe (ADBE). It helps users evaluate which stock better fits their investment preferences by computing key financial indicators and visualizing results.
 ### Intended Users:
   Individual US stock investors
 
@@ -20,9 +20,9 @@ This data product compares the risk and return performance of Microsoft (MSFT) a
   Anyone needing data-driven comparisons of tech stock performance
 ***
 ## 3. Dataset Description
-- Source: Yahoo Finance (yfinance API)
-- Content: Daily adjusted closing prices (2020–01–01 to 2025–01–01)
-- Instruments: MSFT, NVDA, S&P 500 (^GSPC)
+- Source: WRDS (Compustat + CRSP)
+- Time range: 2019 – 2024 (annual financials + daily returns)
+- Key data: Balance sheet, income statement, stock returns, market benchmark (S&P 500 via SPY)
   
 ### Reason for selection:
 Reliable and widely used financial data
@@ -31,10 +31,14 @@ Covers bull and volatile market periods
 Aligns with business/finance context required by ACC102
 ***
 ## 4. Python Workflow
-- Data Acquisition: Download prices using yfinance
-- Data Cleaning: Remove missing values and ensure date alignment
-- Transformation: Compute daily returns
-### Analysis:
+- Data extraction from WRDS using a single connection
+- Data cleaning and preprocessing
+- Fundamental financial ratio analysis
+- Risk & performance metrics calculation
+- Visualization and comparison
+- Final dataset export
+  
+### Metrics included:
 **Annualized return & volatility**
 
 **Maximum drawdown**
@@ -50,36 +54,34 @@ Aligns with business/finance context required by ACC102
 **Output: Final dataset exported to CSV**
 
 ***
-## 5. Key Outputs & Insights
-- Comprehensive metrics table
-- Comparative charts for all indicators
-- High positive correlation between MSFT and NVDA
-  
-  NVDA: higher return, higher risk, higher Beta
+## 5. Key Findings
+- MSFT shows stronger and more stable profitability over the period.
+- ADBE has higher return potential but also higher volatility.
+- Both stocks outperform the market with positive alpha.
+- MSFT has better risk-adjusted returns (higher Sharpe ratio).
+- MSFT and ADBE are strongly correlated with each other and with the S&P 500.
 
-  MSFT: more stable, lower volatility and drawdown
-- Final cleaned dataset for further analysis
 ***
-## 6. Libraries Used
-plaintext
+## 6. How to Run
+1.Install required packages:  
+   `pip install pandas numpy matplotlib seaborn wrds`
+2. Open the Jupyter notebook
+3. Run cells sequentially from top to bottom
+4. Ensure you have a valid WRDS account
 
-yfinance, pandas, numpy, matplotlib, seaborn
 ***
-## 7. How to Run
-1. Install dependencies: `pip install yfinance pandas numpy matplotlib seaborn`
-2. Open `MSFT_NVDA_Analysis.ipynb in Jupyter`
-3. Run cells sequentially
-4. View charts, metrics, and exported CSV
+## 7.Product & Demo
+- **GitHub Repository**: [Your GitHub Link]
+- **Demo Video**: [Your Demo Video Link]
+- **Notebook**: `MSFT_ADBE_Investment_Analysis.ipynb`
 ***
-## 8. Ethical & Compliance Notes
-- Data used for educational purpose only
-- Source clearly acknowledged
-- No sensitive or proprietary data included
-- This is for analysis only, NOT investment advice
-***
-## 9. AI Disclosure (Required by ACC102)
-Tools used: Gemini,Doubao
+## 8.Limitations & Improvements
+- Limitations: Reliance on historical data; no macroeconomic variables included.
+- Improvements: Add peer comparison, include valuation ratios, build a simple forecasting model.
 
-Date: [2026/4/25]
+---
 
-Purpose: Code debugging, explanation, reflection report drafting, and language polishing
+## AI Disclosure
+- AI tools：Gemini，Doubao
+- AI tools were used to assist with code structuring, debugging.
+
