@@ -71,7 +71,7 @@ Aligns with business/finance context required by ACC102
 
 ***
 ## 7.Product & Demo
-- **GitHub Repository**: [Your GitHub Link]
+- **GitHub Repository**: [https://github.com/akiverlassen/acc102]
 - **Demo Video**: [Your Demo Video Link]
 - **Notebook**: `ACC102 .ipynb`
 ***
