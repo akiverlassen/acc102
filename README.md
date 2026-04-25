@@ -65,8 +65,11 @@ Aligns with business/finance context required by ACC102
 ## 6. How to Run
 1.Install required packages:  
    `pip install pandas numpy matplotlib seaborn wrds`
+   
 2. Open the Jupyter notebook
+
 3. Run cells sequentially from top to bottom
+
 4. Ensure you have a valid WRDS account
 
 ***
