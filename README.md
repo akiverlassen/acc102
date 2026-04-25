@@ -70,9 +70,8 @@ Aligns with business/finance context required by ACC102
 4. Ensure you have a valid WRDS account
 
 ***
-## 7.Product & Demo
+## 7.Product 
 - **GitHub Repository**: [https://github.com/akiverlassen/acc102]
-- **Demo Video**: [Your Demo Video Link]
 - **Notebook**: `ACC102 .ipynb`
 ***
 ## 8.Limitations & Improvements
